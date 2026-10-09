@@ -106,23 +106,144 @@
             <div class="section-header">
                 <div>
                     <h2>Nos biens <span class="accent">en vedette</span></h2>
-                    <p>Sélection des meuilleurs propriétés du moment</p>
+                    <p>Sélection des meilleures propriétés du moment</p>
                 </div>
                 <a href="#" class="link-more">Voir tout <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
-            <div class="properties-grid" id="propretiesGrid">
-                <!-- Généré par JavaScript -->
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Les cartes seront injectées par JS -->
             </div>
+
             <div class="load-more-wrapper">
                 <button class="btn btn-primary" id="loadMoreBtn">
-                    <i class="fa-solid  fa-rotate"></i> Charger plus de biens
+                    <i class="fa-solid fa-rotate"></i> Charger plus de biens
                 </button>
             </div>
         </div>
     </section>
 
-    
+    <!-- ===== SERVICES ===== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header center">
+                <div>
+                    <h2>Pourquoi nous <span class="accent">choisir</span> ?</h2>
+                    <p>Une expérience immobilière simple et transparente</p>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                    <h3>Recherche intelligente</h3>
+                    <p>Notre algorithme vous propose les biens qui correspondent à vos critères.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-file-shield"></i></div>
+                    <h3>Biens vérifiés</h3>
+                    <p>Chaque annonce est contrôlée par nos experts pour garantir sa fiabilité.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h3>Accompagnement</h3>
+                    <p>Nos agents vous guident de la visite jusqu'à la signature.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Support 24/7</h3>
+                    <p>Notre équipe est disponible à tout moment pour répondre à vos questions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>Vous avez un bien à vendre ou à louer ?</h2>
+                    <p>Publiez votre annonce gratuitement et touchez des milliers d'acheteurs.</p>
+                </div>
+                <button class="btn btn-accent">
+                    <i class="fa-solid fa-plus"></i> Publier une annonce
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT / FOOTER ===== -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>Immo<span class="accent">Loc</span></span>
+                </a>
+                <p>La plateforme immobilière de référence pour trouver votre bien idéal.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="#accueil">Accueil</a>
+                <a href="#biens">Biens</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 12 rue de la Paix, Paris</p>
+                <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
+                <p><i class="fa-solid fa-envelope"></i> contact@immloc.fr</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>Recevez les nouveaux biens par email.</p>
+                <form class="newsletter" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 ImmoLoc. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-img">
+                <img id="modalImg" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <span class="property-tag" id="modalTag"></span>
+                <h3 id="modalTitle"></h3>
+                <p class="property-location"><i class="fa-solid fa-location-dot"></i> <span id="modalLocation"></span></p>
+                <p id="modalDesc"></p>
+                <div class="property-features" id="modalFeatures"></div>
+                <div class="modal-footer">
+                    <span class="property-price" id="modalPrice"></span>
+                    <button class="btn btn-primary"><i class="fa-solid fa-phone"></i> Contacter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
