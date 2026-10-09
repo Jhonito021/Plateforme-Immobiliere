@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- ===== HEADER ===== -->
     <header class="header" id="header">
         <div class="container header-content">
             <a href="#" class="logo">
                 <i class="fa-solid fa-house-chimney"></i>
-                <span>Immo <span class="accent">Loc</span></span>
+                <span>Immo<span class="accent">Loc</span></span>
             </a>
 
             <nav class="nav" id="nav">
@@ -26,7 +28,7 @@
                 <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-                <button class="btn btn-otline hide-mobile">
+                <button class="btn btn-outline hide-mobile">
                     <i class="fa-solid fa-user"></i> Connexion
                 </button>
                 <button class="menu-toggle" id="menuToggle" aria-label="Menu">
@@ -35,6 +37,69 @@
             </div>
         </div>
     </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="accueil">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Trouvez le <span class="accent">bien parfait</span> pour votre avenir</h1>
+                <p>Des milliers de propriétés vérifiées, à louer ou à vendre, partout à Madagascar. Votre prochain chez-vous est à un clic.</p>
+
+                <div class="search-box">
+                    <div class="search-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" id="searchLocation" placeholder="Ville, quartier...">
+                    </div>
+                    <div class="search-field">
+                        <i class="fa-solid fa-house"></i>
+                        <select id="searchType">
+                            <option value="">Type de bien</option>
+                            <option value="appartement">Appartement</option>
+                            <option value="maison">Maison</option>
+                            <option value="studio">Studio</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary" id="searchBtn">
+                        <i class="fa-solid fa-magnifying-glass"></i> Rechercher
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>2 500+</strong>
+                        <span>Biens disponibles</span>
+                    </div>
+                    <div class="stat">
+                        <strong>15 000+</strong>
+                        <span>Clients satisfaits</span>
+                    </div>
+                    <div class="stat">
+                        <strong>98%</strong>
+                        <span>Taux de réussite</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800" alt="Maison moderne">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FILTRES ===== -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="vente">À vendre</button>
+                <button class="filter-btn" data-filter="location">À louer</button>
+                <button class="filter-btn" data-filter="appartement">Appartements</button>
+                <button class="filter-btn" data-filter="maison">Maisons</button>
+            </div>
+        </div>
+    </section>
+
     <script src="js/script.js"></script>
 </body>
 </html>
