@@ -56,13 +56,13 @@ const properties = [
     },
     {
         id: 5,
-        title: "Penthouse vue sur l'océan à Ankorondrano",
+        title: "Penthouse vue sur ville Ankorondrano",
         location: "Ankorondrano, Antananarivo",
         price: 2500000000,
         type: "vente",
         category: "appartement",
         img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600",
-        desc: "Exceptionnel penthouse de 200m² avec terrasse panoramique de 80m² offrant une vue imprenable sur les hauteurs d'Antananarivo et le lac Anosy au loin. Prestations luxueuses, marbre et bois précieux.",
+        desc: "Exceptionnel penthouse de 200m² avec terrasse panoramique de 80m² offrant une vue imprenable sur les hauteurs d'Antananarivo. Prestations luxueuses, marbre et bois précieux.",
         beds: 3,
         baths: 3,
         area: 200
