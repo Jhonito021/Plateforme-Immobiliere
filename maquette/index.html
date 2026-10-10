@@ -200,9 +200,10 @@
 
             <div class="footer-col">
                 <h4>Contact</h4>
-                <p><i class="fa-solid fa-location-dot"></i> 12 rue de la Paix, Paris</p>
-                <p><i class="fa-solid fa-phone"></i> +33 1 23 45 67 89</p>
-                <p><i class="fa-solid fa-envelope"></i> contact@immloc.fr</p>
+                <p><i class="fa-solid fa-location-dot"></i> Tana 101, Mahamasina</p>
+                <p><i class="fa-solid fa-phone"></i> +261 38 13 142 58</p>
+                <p><i class="fa-solid fa-envelope"></i> jhonito021@gmail.com</p>
+                <p><i class="fa-brands fa-facebook-f"></i>Dinot Fanomezantsoa</p>
             </div>
 
             <div class="footer-col">
@@ -216,7 +217,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p>© 2025 ImmoLoc. Tous droits réservés.</p>
+            <p>&copy; <span id="date"></span> Immo Loc. Tous droits réservés. Les quatres Attaquants développeurs <i class="fa-solid fa-code"></i></span></p>
         </div>
     </footer>
 
@@ -246,5 +247,11 @@
     </button>
 
     <script src="js/script.js"></script>
+    <script>
+        const date = new Date();
+        const option = { year: 'numeric', month: 'long'};
+        const dates = date.toLocaleDateString(undefined, option);
+        document.getElementById ('date').textContent = dates;
+    </script>
 </body>
 </html>

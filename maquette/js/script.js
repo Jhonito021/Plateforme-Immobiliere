@@ -1,110 +1,162 @@
 /* ============================================================
-   DONNÉES SIMULÉES
+   DONNÉES SIMULÉES — MADAGASCAR
    ============================================================ */
 const properties = [
     {
         id: 1,
-        title: "Villa moderne avec piscine",
-        location: "Aix-en-Provence, 13100",
-        price: 850000,
+        title: "Villa moderne avec piscine à Ivandry",
+        location: "Ivandry, Antananarivo",
+        price: 1850000000, // 1,85 milliard Ar
         type: "vente",
         category: "maison",
         img: "https://images.unsplash.com/photo-1613977257363-707ba9348227?w=600",
-        desc: "Magnifique villa contemporaine de 220m² avec piscine chauffée, jardin paysager et garage double. Prestations haut de gamme et finitions soignées.",
+        desc: "Magnifique villa contemporaine de 320m² sur un terrain de 800m² à Ivandry. Piscine chauffée, jardin tropical, garage double et groupe électrogène. Quartier sécurisé et prisé d'Antananarivo.",
         beds: 5,
         baths: 3,
-        area: 220
+        area: 320
     },
     {
         id: 2,
-        title: "Appartement lumineux centre-ville",
-        location: "Lyon, 69002",
-        price: 1450,
+        title: "Appartement lumineux à Ankorondrano",
+        location: "Ankorondrano, Antananarivo",
+        price: 2500000, // loyer mensuel
         type: "location",
         category: "appartement",
         img: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600",
-        desc: "Bel appartement de 75m² entièrement rénové, situé au cœur de la Presqu'île. Proche transports et commerces. Cuisine équipée.",
+        desc: "Bel appartement de 95m² entièrement meublé au cœur du quartier des affaires d'Ankorondrano. Proche des banques, restaurants et centres commerciaux. Immeuble sécurisé avec ascenseur et parking.",
         beds: 2,
-        baths: 1,
-        area: 75
+        baths: 2,
+        area: 95
     },
     {
         id: 3,
-        title: "Maison de campagne rénovée",
-        location: "Bordeaux, 33000",
-        price: 520000,
+        title: "Maison en pierre à Ambohimanga",
+        location: "Ambohimanga, Antananarivo",
+        price: 650000000, // 650 millions Ar
         type: "vente",
         category: "maison",
         img: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600",
-        desc: "Charmante maison en pierre de 180m² sur un terrain de 2000m². Poutres apparentes, cheminée, dépendances. Au calme absolu.",
+        desc: "Charmante maison en pierre de 180m² sur un terrain arboré de 2000m², à proximité du Rova d'Ambohimanga (site UNESCO). Poutres en bois de palissandre, cheminée et dépendances.",
         beds: 4,
         baths: 2,
         area: 180
     },
     {
         id: 4,
-        title: "Studio cosy proche université",
-        location: "Toulouse, 31000",
-        price: 650,
+        title: "Studio meublé proche Université d'Antananarivo",
+        location: "Ambohipo, Antananarivo",
+        price: 450000, // loyer mensuel
         type: "location",
         category: "appartement",
         img: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600",
-        desc: "Studio meublé de 28m² idéal étudiant. Proche fac et commerces. Charges comprises, immeuble sécurisé avec ascenseur.",
+        desc: "Studio meublé de 30m² idéal pour étudiant ou jeune actif. Situé à Ambohipo, à 5 minutes de l'Université d'Antananarivo. Charges comprises, immeuble sécurisé avec gardien 24h/24.",
         beds: 1,
         baths: 1,
-        area: 28
+        area: 30
     },
     {
         id: 5,
-        title: "Penthouse avec vue panoramique",
-        location: "Nice, 06000",
-        price: 1200000,
+        title: "Penthouse vue sur l'océan à Ankorondrano",
+        location: "Ankorondrano, Antananarivo",
+        price: 2500000000,
         type: "vente",
         category: "appartement",
         img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600",
-        desc: "Exceptionnel penthouse de 150m² avec terrasse de 60m² offrant une vue imprenable sur la mer. Prestations luxueuses.",
+        desc: "Exceptionnel penthouse de 200m² avec terrasse panoramique de 80m² offrant une vue imprenable sur les hauteurs d'Antananarivo et le lac Anosy au loin. Prestations luxueuses, marbre et bois précieux.",
+        beds: 3,
+        baths: 3,
+        area: 200
+    },
+    {
+        id: 6,
+        title: "Villa de charme à Nosy Be",
+        location: "Ambondrona, Nosy Be",
+        price: 4500000, // loyer mensuel
+        type: "location",
+        category: "villa",
+        img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600",
+        desc: "Superbe villa de 150m² face à la mer à Ambondrona, Nosy Be. Terrasse en bois, accès direct à la plage, jardin tropical. Idéal pour un séjour longue durée au paradis.",
         beds: 3,
         baths: 2,
         area: 150
     },
     {
-        id: 6,
-        title: "Loft industriel d'exception",
-        location: "Paris 11e, 75011",
-        price: 2100,
-        type: "location",
-        category: "appartement",
-        img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600",
-        desc: "Superbe loft de 120m² dans ancienne usine rénovée. Hauteur sous plafond 4m, verrière, cuisine américaine équipée.",
-        beds: 2,
-        baths: 2,
-        area: 120
-    },
-    {
         id: 7,
-        title: "Villa contemporaine bord de mer",
-        location: "Biarritz, 64200",
-        price: 1650000,
+        title: "Villa pieds dans l'eau à Ifaty",
+        location: "Ifaty, Toliara",
+        price: 950000000,
         type: "vente",
-        category: "maison",
+        category: "villa",
         img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600",
-        desc: "Villa d'architecte de 280m² face à l'océan. Piscine à débordement, spa, cave à vin. Un bien rare et prestigieux.",
-        beds: 6,
-        baths: 4,
-        area: 280
+        desc: "Villa d'architecte de 250m² face au canal du Mozambique à Ifaty. Piscine naturelle, terrasse en bois, ponton privé. Un bien rare dans l'une des plus belles baies de Madagascar.",
+        beds: 4,
+        baths: 3,
+        area: 250
     },
     {
         id: 8,
-        title: "Appartement familial avec balcon",
-        location: "Nantes, 44000",
-        price: 950,
+        title: "Appartement familial à Andraharo",
+        location: "Andraharo, Antananarivo",
+        price: 1800000, // loyer mensuel
         type: "location",
         category: "appartement",
         img: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?w=600",
-        desc: "Appartement traversant de 85m² avec balcon, proche écoles et parc. Cuisine séparée, 3 chambres, dressing.",
+        desc: "Appartement traversant de 110m² avec balcon au cœur du nouveau quartier d'affaires d'Andraharo. Proche de l'Ambassade des États-Unis, restaurants et centres commerciaux. 3 chambres, dressing, cuisine équipée.",
         beds: 3,
+        baths: 2,
+        area: 110
+    },
+    {
+        id: 9,
+        title: "Bungalow en bord de mer à Mahajanga",
+        location: "Amborovy, Mahajanga",
+        price: 850000,
+        type: "location",
+        category: "maison",
+        img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600",
+        desc: "Bungalow de 60m² à 50m de la plage d'Amborovy. Terrasse ombragée, jardin avec cocotiers. Parfait pour une retraite au bord du canal du Mozambique.",
+        beds: 2,
         baths: 1,
-        area: 85
+        area: 60
+    },
+    {
+        id: 10,
+        title: "Duplex haut standing à Ivato",
+        location: "Ivato, Antananarivo",
+        price: 450000000,
+        type: "vente",
+        category: "appartement",
+        img: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600",
+        desc: "Duplex neuf de 140m² à 5 minutes de l'Aéroport International d'Ivato. Résidence sécurisée avec piscine commune, salle de sport et parking souterrain. Finitions haut de gamme.",
+        beds: 3,
+        baths: 2,
+        area: 140
+    },
+    {
+        id: 11,
+        title: "Maison coloniale rénovée à Antsirabe",
+        location: "Centre-ville, Antsirabe",
+        price: 320000000,
+        type: "vente",
+        category: "maison",
+        img: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600",
+        desc: "Superbe maison coloniale de 200m² entièrement rénovée au cœur d'Antsirabe, la ville d'eaux. Parquet en bois précieux, hauts plafonds, jardin fleuri. Proche des thermes et du lac Tritriva.",
+        beds: 4,
+        baths: 2,
+        area: 200
+    },
+    {
+        id: 12,
+        title: "Studio cosy à Toamasina",
+        location: "Centre-ville, Toamasina",
+        price: 350000,
+        type: "location",
+        category: "appartement",
+        img: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=600",
+        desc: "Studio meublé de 35m² au centre de Toamasina, proche du port et du marché Bazary Be. Idéal pour un expatrié en mission ou un jeune professionnel. Eau et électricité incluses.",
+        beds: 1,
+        baths: 1,
+        area: 35
     }
 ];
 
@@ -136,8 +188,8 @@ const searchBtn = document.getElementById('searchBtn');
 const formatPrice = (price, type) => {
     const formatted = new Intl.NumberFormat('fr-FR').format(price);
     return type === 'location'
-        ? `${formatted} €<small>/mois</small>`
-        : `${formatted} €`;
+        ? `${formatted} Ar<small>/mois</small>`
+        : `${formatted} Ar`;
 };
 
 /* ============================================================
